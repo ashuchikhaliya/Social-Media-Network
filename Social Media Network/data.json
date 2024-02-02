@@ -1,0 +1,11 @@
+{
+  "nodes": [
+    { "id": 1, "name": "User 1", "relationship": "closeFriend" },
+    { "id": 2, "name": "User 2", "relationship": "friend" },
+    { "id": 3, "name": "User 3", "relationship": "follow" }
+  ],
+  "links": [
+    { "source": 1, "target": 2, "relationship": "friendship" },
+    { "source": 2, "target": 3, "relationship": "follow" }
+  ]
+}

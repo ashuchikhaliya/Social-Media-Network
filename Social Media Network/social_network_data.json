@@ -1,0 +1,41 @@
+{
+  "nodes": [
+    { "id": "1", "name": "Stacy Gilbert" },
+    { "id": "2", "name": "Stephen Thornton" },
+    { "id": "3", "name": "Cynthia Carlson DDS" },
+    { "id": "4", "name": "Sally Porter" },
+    { "id": "5", "name": "Jordan Pitts" },
+    { "id": "6", "name": "Christopher Davis" },
+    { "id": "7", "name": "Elijah Nichols" },
+    { "id": "8", "name": "Jessica Allen" },
+    { "id": "9", "name": "Savannah Wallace" },
+    { "id": "10", "name": "Emily Hawkins" }
+  ],
+  "links": [
+    { "source": "1", "target": "10", "relationship": "Friend" },
+    { "source": "1", "target": "9", "relationship": "Friend" },
+    { "source": "1", "target": "4", "relationship": "Friend" },
+    { "source": "1", "target": "3", "relationship": "Friend" },
+    { "source": "1", "target": "7", "relationship": "Friend" },
+    { "source": "1", "target": "5", "relationship": "Friend" },
+    { "source": "1", "target": "6", "relationship": "Friend" },
+    { "source": "2", "target": "6", "relationship": "Friend" },
+    { "source": "2", "target": "5", "relationship": "Friend" },
+    { "source": "2", "target": "9", "relationship": "Friend" },
+    { "source": "2", "target": "10", "relationship": "Friend" },
+    { "source": "2", "target": "3", "relationship": "Friend" },
+    { "source": "2", "target": "4", "relationship": "Friend" },
+    { "source": "3", "target": "5", "relationship": "Friend" },
+    { "source": "3", "target": "4", "relationship": "Friend" },
+    { "source": "3", "target": "6", "relationship": "Friend" },
+    { "source": "3", "target": "8", "relationship": "Friend" },
+    { "source": "4", "target": "10", "relationship": "Friend" },
+    { "source": "4", "target": "5", "relationship": "Friend" },
+    { "source": "4", "target": "6", "relationship": "Friend" },
+    { "source": "4", "target": "7", "relationship": "Friend" },
+    { "source": "5", "target": "8", "relationship": "Friend" },
+    { "source": "5", "target": "6", "relationship": "Friend" },
+    { "source": "6", "target": "8", "relationship": "Friend" },
+    { "source": "7", "target": "10", "relationship": "Friend" }
+  ]
+}

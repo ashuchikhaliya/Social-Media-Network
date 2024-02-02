@@ -1,0 +1,56 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden /* Hide body overflow to prevent double scrollbars */
+}
+
+*{
+    background-color: #101010;
+}
+#graph-container {
+    width: 100vw;
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+   
+}
+
+/* Add any custom styles for your graph here */
+circle {
+    
+    stroke: #ffffff; /* White border for nodes */
+    stroke-width: 2; /* Border width */
+    cursor: pointer; 
+}
+
+circle:hover{
+    color: #010e36;
+}
+
+line {
+    stroke: #b7a8a8; /* Gray color for edges */
+    stroke-width: 2;
+}
+text {
+    font-size: 12px; /* Adjust font size as needed */
+    fill: #ffffff; /* Text color */
+    pointer-events: none;
+}
+
+.tooltip {
+    position: absolute;
+    text-align: center;
+    padding: 5px;
+    font-size: 12px;
+    background: #fff;
+    border: 1px solid #ddd;
+    pointer-events: none;
+    visibility: hidden;
+}
