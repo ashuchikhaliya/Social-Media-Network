@@ -9,7 +9,6 @@ const svg = container
   .attr("height", "100%")
   .append("g");
 
-// Append a background rectangle to fill the SVG
 svg
   .append("rect")
   .attr("width", "100%")
@@ -20,18 +19,16 @@ svg
 // Enable zoom behavior
 const zoom = d3.zoom().scaleExtent([0.1, Infinity]).on("zoom", zoomed);
 
-// Apply zoom behavior to SVG
 svg.call(zoom);
 
-// Define the zoom function
+// zoom function
 function zoomed(event) {
   contentGroup.attr("transform", event.transform);
 }
 
-// Append another group for the actual content, inside the main SVG group
 const contentGroup = svg.append("g");
 
-// Load data from a JSON file
+// Load data
 d3.json("social_network_data.json").then(function (data) {
   const nodes = data.nodes;
   const links = data.links;
