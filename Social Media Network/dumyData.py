@@ -5,7 +5,7 @@ from faker import Faker
 
 fake = Faker()
 
-# Function to generate a random social network graph with user profiles
+# Function to generate a random user profiles
 def social_network_data(num_users):
     G = nx.Graph()
 
@@ -31,7 +31,7 @@ def social_network_data(num_users):
     return G
 
 # Generate social network with 5 users (you can adjust the number)
-social_network = social_network_data(1000)
+social_network = social_network_data(30)
 
 # Convert the graph to JSON format
 data = {"nodes": [
