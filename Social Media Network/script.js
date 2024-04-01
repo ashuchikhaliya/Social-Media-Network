@@ -151,6 +151,25 @@ d3.json("social_network_data.json").then(function (data) {
       }
     });
 
+    // Find Suggestion friends list 
+    const suggestedFriendsNodeIds = new Set();
+    const suggestedFriendsEdgeIds = new Set();
+    console.log(links);
+    links.forEach(link => {
+      const sourceID = link.source.id;
+      const targetID = link.target.id;
+      if(sourceID === hoveredNodeId|| targetID === hoveredNodeId){
+        return;
+      }
+      if(connectedNodeIds.has(sourceID) && !connectedNodeIds.has(targetID)){
+        suggestedFriendsNodeIds.add(targetID);
+        suggestedFriendsEdgeIds.add(link.id);
+      }
+      if(!connectedNodeIds.has(sourceID) && connectedNodeIds.has(targetID)){
+        suggestedFriendsNodeIds.add(sourceID);
+        suggestedFriendsEdgeIds.add(link.id);
+      }
+    });
     // Smoothly increase size for hovered node
     node
       .selectAll("circle")
